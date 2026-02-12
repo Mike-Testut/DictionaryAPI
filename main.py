@@ -6,7 +6,7 @@ def home():
 
 @app.route('/api/v1/<word>')
 def api_route(word):
-    definition = "Definition Placeholder"
+    definition = word.upper()
     return { "word": word,
              "definition": definition
              }
